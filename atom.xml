@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://peng-fan.github.io/"/>
-  <updated>2020-05-02T13:18:47.298Z</updated>
+  <updated>2020-05-02T13:20:27.538Z</updated>
   <id>https://peng-fan.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://peng-fan.github.io/2020/05/02/linux-Qt%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>https://peng-fan.github.io/2020/05/02/linux-Qt%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
     <published>2020-05-02T13:13:32.000Z</published>
-    <updated>2020-05-02T13:18:47.298Z</updated>
+    <updated>2020-05-02T13:20:27.538Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>目前写代码还是觉得Qt比较方便，代码提示很完善，构建工程又非常灵活，所以暂时是最佳选择了。记录一下在Ubuntu安装Qt的步骤。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">系统信息：18.04.2-Ubuntu</span><br></pre></td></tr></table></figure><h3 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h3><p>将系统的软件列表和软件更新到最新状态，以保证能够安装最新版本的软件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line">sudo apg-get ugrade</span><br></pre></td></tr></table></figure><h3 id="安装build-essential"><a href="#安装build-essential" class="headerlink" title="安装build-essential"></a>安装build-essential</h3><p>build-essential是Ubuntu默认的meta-package，包含了GCC编译器以及相关的库文件，包括了gcc、g++、make等，执行命令如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install build-essential</span><br></pre></td></tr></table></figure><h3 id="安装Qt"><a href="#安装Qt" class="headerlink" title="安装Qt"></a>安装Qt</h3><p>直接在线安装Qt,命令如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install qtcreator</span><br><span class="line">sudo apt-get install qt5-default</span><br></pre></td></tr></table></figure><h3 id="安装CMake"><a href="#安装CMake" class="headerlink" title="安装CMake"></a>安装CMake</h3><p>构建工具选择CMake,默认的QMake也可以的，看个人选择。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install cmake</span><br></pre></td></tr></table></figure><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>安装完成后，直接终端输入<em>qtcreator</em>就可以运行，之后选择创建一个C语言工程，选择CMake构建，运行示例如下：<br><img src="/2020/05/02/linux-Qt%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/run-test.png" alt></p>]]></content>
     

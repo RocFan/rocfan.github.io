@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://peng-fan.github.io/"/>
-  <updated>2020-05-02T13:20:27.538Z</updated>
+  <updated>2020-05-03T01:08:07.674Z</updated>
   <id>https://peng-fan.github.io/</id>
   
   <author>
@@ -17,13 +17,51 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CMake基础-构建第一个程序</title>
+    <link href="https://peng-fan.github.io/2020/05/03/CMake%E5%9F%BA%E7%A1%80-%E6%9E%84%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/"/>
+    <id>https://peng-fan.github.io/2020/05/03/CMake%E5%9F%BA%E7%A1%80-%E6%9E%84%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/</id>
+    <published>2020-05-03T01:07:52.000Z</published>
+    <updated>2020-05-03T01:08:07.674Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="CMake" scheme="https://peng-fan.github.io/categories/CMake/"/>
+    
+    
+      <category term="CMake" scheme="https://peng-fan.github.io/tags/CMake/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CPP基础-变量定义</title>
+    <link href="https://peng-fan.github.io/2020/05/03/CPP%E5%9F%BA%E7%A1%80-%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89/"/>
+    <id>https://peng-fan.github.io/2020/05/03/CPP%E5%9F%BA%E7%A1%80-%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89/</id>
+    <published>2020-05-03T01:06:27.000Z</published>
+    <updated>2020-05-03T01:06:45.133Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="https://peng-fan.github.io/categories/C/"/>
+    
+    
+      <category term="C++" scheme="https://peng-fan.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>linux Qt环境搭建</title>
     <link href="https://peng-fan.github.io/2020/05/02/linux-Qt%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>https://peng-fan.github.io/2020/05/02/linux-Qt%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
     <published>2020-05-02T13:13:32.000Z</published>
-    <updated>2020-05-02T13:20:27.538Z</updated>
+    <updated>2020-05-06T13:22:15.315Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>目前写代码还是觉得Qt比较方便，代码提示很完善，构建工程又非常灵活，所以暂时是最佳选择了。记录一下在Ubuntu安装Qt的步骤。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">系统信息：18.04.2-Ubuntu</span><br></pre></td></tr></table></figure><h3 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h3><p>将系统的软件列表和软件更新到最新状态，以保证能够安装最新版本的软件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line">sudo apg-get ugrade</span><br></pre></td></tr></table></figure><h3 id="安装build-essential"><a href="#安装build-essential" class="headerlink" title="安装build-essential"></a>安装build-essential</h3><p>build-essential是Ubuntu默认的meta-package，包含了GCC编译器以及相关的库文件，包括了gcc、g++、make等，执行命令如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install build-essential</span><br></pre></td></tr></table></figure><h3 id="安装Qt"><a href="#安装Qt" class="headerlink" title="安装Qt"></a>安装Qt</h3><p>直接在线安装Qt,命令如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install qtcreator</span><br><span class="line">sudo apt-get install qt5-default</span><br></pre></td></tr></table></figure><h3 id="安装CMake"><a href="#安装CMake" class="headerlink" title="安装CMake"></a>安装CMake</h3><p>构建工具选择CMake,默认的QMake也可以的，看个人选择。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install cmake</span><br></pre></td></tr></table></figure><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>安装完成后，直接终端输入<em>qtcreator</em>就可以运行，之后选择创建一个C语言工程，选择CMake构建，运行示例如下：<br><img src="/2020/05/02/linux-Qt%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/run-test.png" alt></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>目前写代码还是觉得Qt比较方便，代码提示很完善，构建工程又非常灵活，所以暂时是最佳选择了。记录一下在Ubuntu安装Qt的步骤。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">系统信息：18.04.2-Ubuntu</span><br></pre></td></tr></table></figure><h3 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h3><p>将系统的软件列表和软件更新到最新状态，以保证能够安装最新版本的软件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line">sudo apg-get upgrade</span><br></pre></td></tr></table></figure><h3 id="安装build-essential"><a href="#安装build-essential" class="headerlink" title="安装build-essential"></a>安装build-essential</h3><p>build-essential是Ubuntu默认的meta-package，包含了GCC编译器以及相关的库文件，包括了gcc、g++、make等，执行命令如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install build-essential</span><br></pre></td></tr></table></figure><h3 id="安装Qt"><a href="#安装Qt" class="headerlink" title="安装Qt"></a>安装Qt</h3><p>直接在线安装Qt,命令如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install qtcreator</span><br><span class="line">sudo apt-get install qt5-default</span><br></pre></td></tr></table></figure><h3 id="安装CMake"><a href="#安装CMake" class="headerlink" title="安装CMake"></a>安装CMake</h3><p>构建工具选择CMake,默认的QMake也可以的，看个人选择。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install cmake</span><br></pre></td></tr></table></figure><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>安装完成后，直接终端输入<em>qtcreator</em>就可以运行，之后选择创建一个C语言工程，选择CMake构建，运行示例如下：<br><img src="/2020/05/02/linux-Qt%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/run-test.png" alt></p>]]></content>
     
     <summary type="html">
     
@@ -48,9 +86,19 @@
     <link href="https://peng-fan.github.io/2020/05/02/%E5%BF%85%E5%A4%87%E5%B7%A5%E5%85%B7/"/>
     <id>https://peng-fan.github.io/2020/05/02/%E5%BF%85%E5%A4%87%E5%B7%A5%E5%85%B7/</id>
     <published>2020-05-02T11:43:57.000Z</published>
-    <updated>2020-05-02T13:19:09.944Z</updated>
+    <updated>2020-05-06T13:31:33.110Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="文件对比查看"><a href="#文件对比查看" class="headerlink" title="文件对比查看"></a>文件对比查看</h3><ul><li>winhex</li><li>Beyond Compare</li><li>Meld</li></ul><h3 id="终端"><a href="#终端" class="headerlink" title="终端"></a>终端</h3><ul><li>MobaXterm</li></ul><h3 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h3><ul><li>FastStone</li></ul><h3 id="代码查看"><a href="#代码查看" class="headerlink" title="代码查看"></a>代码查看</h3><ul><li>Source Insight</li></ul><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><ul><li>Everything</li></ul>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;文件对比查看&quot;&gt;&lt;a href=&quot;#文件对比查看&quot; class=&quot;headerlink&quot; title=&quot;文件对比查看&quot;&gt;&lt;/a&gt;文件对比查看&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;winhex&lt;/li&gt;
+&lt;li&gt;Beyond Compare&lt;/li&gt;
+&lt;li&gt;Meld&lt;/li
+      
     
     </summary>
     
